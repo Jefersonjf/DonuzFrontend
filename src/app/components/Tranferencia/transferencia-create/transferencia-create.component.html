@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title>Transferencia</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="CPF" [(ngModel)]="transferencia.CPF" name="cpf">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Valor" [(ngModel)]="transferencia.Valor" name="valor">
+        </mat-form-field>
+
+        <mat-radio-group placeholder="Tipo" [(ngModel)]="transferencia.Tipo" name="tipo" aria-label="tipo">
+            <mat-radio-button [value]="0">Credito</mat-radio-button>
+            <mat-radio-button [value]="1">Debito</mat-radio-button>
+        </mat-radio-group> 
+                         
+     
+    </form>
+
+    <button mat-raised-button (click)="createTransferencia()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+
+</mat-card>
