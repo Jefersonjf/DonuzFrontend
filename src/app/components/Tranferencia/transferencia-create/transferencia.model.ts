@@ -5,5 +5,5 @@ export class Transferencia {
     id?: string
     CPF: string
     Valor: string
-    Tipo: boolean
+    Tipo: Type
 }

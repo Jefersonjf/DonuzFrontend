@@ -11,7 +11,7 @@ import axios, { AxiosError } from 'axios';
 })
 export class CadastroService {
 
-  baseUrl = "https://localhost:7106/api/Cliente"
+  baseUrl = "https://localhost:7106/api/v1/Cliente"
   
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {
@@ -40,6 +40,7 @@ export class CadastroService {
   }
 
   async create(cadastro: Cadastro) {
+    console.log(cadastro)
     const resp = await axios.post<Cadastro>(this.baseUrl, cadastro)
     return resp;
   }

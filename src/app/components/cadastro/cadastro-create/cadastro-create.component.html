@@ -13,7 +13,7 @@
         </mat-form-field>
         
         <mat-form-field>
-            <input matInput placeholder="Endereço" [(ngModel)]="cadastro.endereco" name="endereço">
+            <input matInput placeholder="Endereco" [(ngModel)]="cadastro.endereco" name="endereco">
         </mat-form-field>
         
         <mat-form-field>
@@ -26,7 +26,7 @@
      
     </form>
 
-    <button mat-raised-button (click)="createCadastro()" color="primary">
+    <button mat-raised-button (click)="createCadastro(cadastro)" color="primary">
         Salvar
     </button>
 

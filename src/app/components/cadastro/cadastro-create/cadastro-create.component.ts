@@ -19,11 +19,12 @@ export class CadastroCreateComponent implements OnInit {
 
   }
 
-  async createCadastro() {
+  async createCadastro(cadastro: Cadastro) {
     await this.cadastroService.create(this.cadastro)
     this.cadastroService.showMenssage('Cliente cadastrado!')
     this.router.navigate(['/cadastro'])
   } 
+  
 
   cancel() {
     this.router.navigate(['/cadastro'])

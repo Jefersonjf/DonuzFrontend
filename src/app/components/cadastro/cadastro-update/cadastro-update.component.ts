@@ -29,8 +29,8 @@ export class CadastroUpdateComponent implements OnInit {
     this.cadastro = resp.data
   }
 
-  async updateCadastro() {
-    await this.cadastroSevices.update(this.cadastro)
+  async updateCadastro(cadastro: Cadastro) {
+    await this.cadastroSevices.update(cadastro)
     this.cadastroSevices.showMenssage("Cadastro atualizado com sucesso!");
     this.router.navigate(["/cadastro"]);
   };

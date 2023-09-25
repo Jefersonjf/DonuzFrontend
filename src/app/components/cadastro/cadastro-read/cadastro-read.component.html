@@ -5,9 +5,9 @@
 
   <table mat-table [dataSource]="cadastros">
 
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef>Name</th>
-      <td mat-cell *matCellDef="let row">{{row.name}}</td>
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef>Nome</th>
+      <td mat-cell *matCellDef="let row">{{row.nome}}</td>
     </ng-container>
 
     <ng-container matColumnDef="cpf">
@@ -32,7 +32,7 @@
 
         <div class="actions">
 
-          <a routerLink="/cadastros/update/{{ row.cpf }}" class="edit">
+          <a routerLink="/cadastros/update/{{ row.id }}" class="edit">
             <i class="material-icons">
               edit
             </i>

@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class CadastroReadComponent implements OnInit {
 
   cadastros: Cadastro[] = []
-  displayedColumns = ['name', 'cpf', 'email', 'saldo', 'action']
+  displayedColumns = ['nome', 'cpf', 'email', 'saldo', 'action']
   inicializado = false;
 
   constructor(private cadastroService: CadastroService) { }

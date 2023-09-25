@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
   })
   export class TransferenciaService {
   
-    baseUrl = "https://localhost:7106/api/Transacao"
+    baseUrl = "https://localhost:7106/api/v1/Transacao"
     
   
     constructor(private snackBar: MatSnackBar, private http: HttpClient) {
@@ -19,11 +19,11 @@ import { HttpClient } from '@angular/common/http';
     }
   
     addInterceptors(){
-      // Intercepta todas as requets
+      
       axios.interceptors.response.use(
-        // Se for sucesso não faz nada, só retorna o sucesso
+        
         success => success,
-        // Se for erro emite uma mensagem de erro
+        
         (error: AxiosError) => {
           this.showMenssage(error.response?.data as string ?? 'Erro de comunicação')
           throw error;
@@ -53,7 +53,6 @@ import { HttpClient } from '@angular/common/http';
       const url = `${this.baseUrl}/${cpf}`
       const resp = await axios.get<Transferencia>(url)
       return resp;
-    } 
-   
+    }    
 
 }
