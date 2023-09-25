@@ -1,27 +1,45 @@
-# CRUDCLIENTE
+# SISTEMA DE CADASTRO E TRANSFERENCIA
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+Este é um guia passo a passo para configurar e executar o sistema de Cadastro e Transferência. Certifique-se de seguir cada etapa cuidadosamente para garantir que o sistema funcione corretamente.
 
-## Development server
+# 1. Rodar o Backend
+1.1 Clone o Repositório
+Primeiro, faça o clone do repositório do backend utilizando o seguinte comando:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+bash
+Copy code
+git clone https://github.com/Jefersonjf/DonuzBackend
 
-## Code scaffolding
+1.2 Execute a Aplicação
+Navegue até a pasta do repositório clonado e execute a aplicação do backend.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Rodar o Frontend
+2.1 Clone o Repositório
+Agora, clone o repositório do frontend com o seguinte comando:
 
-## Build
+bash
+Copy code
+git clone https://github.com/Jefersonjf/DonuzFrontend
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2.2 Configure as Dependências
+Para configurar o ambiente do frontend, siga estas etapas:
 
-## Running unit tests
+Certifique-se de que você está usando o Node.js na versão 20.7.0. Você pode usar uma ferramenta como o "nvm" para gerenciar as versões do Node.js, se necessário.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Certifique-se de que o Angular CLI está instalado na versão 14.0.1. Se não estiver instalado, você pode instalá-lo globalmente com o seguinte comando:
 
-## Running end-to-end tests
+bash
+Copy code
+npm install -g @angular/cli@14.0.1
+Execute o comando npm i na pasta do repositório clonado para instalar as dependências do frontend e criar o arquivo "package.json".
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2.3 Inicie o Sistema
+Abra um terminal no Visual Studio Code ou na pasta onde o sistema está localizado e execute o seguinte comando para iniciar o sistema:
 
-## Further help
+bash
+Copy code
+npm start
+Após seguir esses passos, o sistema estará pronto para uso. Certifique-se de que tanto o backend quanto o frontend estão em execução para acessar todas as funcionalidades do sistema.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
